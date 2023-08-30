@@ -1,0 +1,54 @@
+# .NET Core artifacts
+bin/
+obj/
+out/
+*.suo
+*.user
+*.userosscache
+*.dbmdl
+*.jfm
+*.log
+*.vscode
+.vscode/
+.vs/
+*.rptproj.bak
+
+# Rider artifacts
+.idea/
+
+# User-specific files
+*.rsuser
+*.sln.docstates
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Rider
+.idea/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Node/NPM artifacts
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
