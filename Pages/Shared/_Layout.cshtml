@@ -8,21 +8,19 @@
     <link rel="stylesheet" href="~/css/output.css" />
 </head>
 
-<body>
-    <header>
-        <nav class="">
-            <div class="flex sm:text-5xl text-xl gap-5 justify-center">
-                <a class="" asp-area="" asp-page="/Index">JokeApp</a>
-                <a class="" asp-area="" asp-page="/Index">Home</a>
-                <a class="" asp-area="" asp-page="/Privacy">Privacy</a>
-            </div>
-        </nav>
-    </header>
-    <main role="main" class="p-10">
+<body class="h-[100dvh]">
+    <nav class="h-1/6 p-10">
+        <div class="flex sm:text-5xl text-xl gap-5 justify-center">
+            <a class="" asp-area="" asp-page="/Index">JokeApp</a>
+            <a class="" asp-area="" asp-page="/Index">Home</a>
+            <a class="" asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </nav>
+    <main role="main" class="p-10 h-4/6">
         @RenderBody()
     </main>
 
-    <footer class="p-10">
+    <footer class="p-10 h-1/6">
         &copy; 2023 - JokeApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
     </footer>
 

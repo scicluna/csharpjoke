@@ -488,6 +488,15 @@ video {
 .flex {
   display: flex;
 }
+.h-1\/6 {
+  height: 16.666667%;
+}
+.h-4\/6 {
+  height: 66.666667%;
+}
+.h-\[100dvh\] {
+  height: 100dvh;
+}
 .justify-center {
   justify-content: center;
 }
@@ -499,6 +508,10 @@ video {
 }
 .text-center {
   text-align: center;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-xl {
   font-size: 1.25rem;
