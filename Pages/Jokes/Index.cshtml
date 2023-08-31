@@ -1,0 +1,48 @@
+@page
+@model JokeApp.Pages_Jokes.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Joke[0].JokePrompt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Joke[0].JokeAnswer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Joke[0].Author)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Joke) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.JokePrompt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JokeAnswer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author.Id)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
